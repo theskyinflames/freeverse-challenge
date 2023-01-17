@@ -1,0 +1,1 @@
+truncate table if exists products;
