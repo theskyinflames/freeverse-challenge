@@ -1,0 +1,26 @@
+version: "3"
+services:
+  freeverse-challenge:
+    build: .
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      - DB_DRIVER_NAME=${DB_DRIVER_NAME:-postgres}
+      - DB_URI=${DB_URI:-postgres://db_local_user:db_local_user_pwd@db:5432/local_db?sslmode=disable}
+      - DB_MIGRATIONS_PATH=${DB_MIGRATIONS_PATH:-file:///challenge/migrations}
+      - DB_NAME=${DB_NAME:-local_db}
+  db:
+    image: postgres:15.1-alpine
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-db_local_admin_user}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-db_local_admin_user_password}
+      - POSTGRES_DB=${POSTGRES_DB:-local_db}
+      - DB_SCHEMA=${DB_SCHEMA:-local_dev}
+      - DB_LOCAL_USER=${DB_LOCAL_USER:-db_local_user}
+      - DB_LOCAL_USER_PWD=${DB_LOCAL_USER_PWD:-db_local_user_pwd}
+    volumes:
+      - ./scripts/initdb.sh:/docker-entrypoint-initdb.d/initdb.sh
+    ports:
+      - "54321:5432"

@@ -39,5 +39,5 @@ docker-build:
 docker-logs:
 	docker logs -f coding-challenge
 
-docker-run:
+docker-run: docker-build
 	docker-compose up -d

@@ -3,10 +3,13 @@ module theskyinflames/freeverse-challenge
 go 1.19
 
 require (
+	github.com/go-chi/chi v1.5.4
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/google/uuid v1.3.0
 	github.com/graphql-go/graphql v0.8.0
+	github.com/lib/pq v1.10.0
 	github.com/ory/dockertest/v3 v3.9.1
+	github.com/rs/cors v1.8.3
 	github.com/stretchr/testify v1.8.1
 	github.com/theskyinflames/cqrs-eda v1.2.5
 )
@@ -27,7 +30,6 @@ require (
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
-	github.com/lib/pq v1.10.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/moby/term v0.0.0-20210619224110-3f7ff695adc6 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
