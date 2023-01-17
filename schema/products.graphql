@@ -1,0 +1,23 @@
+type Product {
+  id: String!
+  name: String!
+  price: Float!
+  available: Boolean!
+}
+
+type Query {
+  products: [Product!]!
+}
+
+type PurchaseResponse {
+  success: Boolean!
+  error: String
+}
+
+input PurchaseProductInput {
+  productID: String!
+}
+
+type Mutation {
+  purchaseProduct(input: PurchaseProductInput!): PurchaseResponse
+}
