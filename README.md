@@ -109,6 +109,15 @@ These are the GraphQL requests that the service's API provides:
        --data '{"query":"mutation {purchase_product(input: {productID: \"ec92361c-3e36-4371-b040-28f608cbe8c6\"}) {success error }}"}'
   ```
 
+## How to test it
+
+The service includes unit tests. They can be run this way:
+
+```sh
+  make test-unit
+  make test-db
+```
+
 ## Repo layout
 
 * schema - GraphQL schema implemented
