@@ -161,6 +161,9 @@ func PurchaseProductResolver(log cqrs.Logger, bus cqrs.Bus) func(p graphql.Resol
 			if errors.Is(err, domain.ErrProductPurchased) {
 				return PurchaseResponse{Success: false, Error: errors.New("productID not available for purchasing").Error()}, nil
 			}
+			if errors.Is(err, app.ErrNotFound) {
+				return PurchaseResponse{Success: false, Error: errors.New("productID not found").Error()}, nil
+			}
 			return PurchaseResponse{Success: false, Error: errors.New("internal error").Error()}, nil
 		}
 
