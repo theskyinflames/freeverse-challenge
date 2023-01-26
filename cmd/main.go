@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"theskyinflames/freeverse-challenge/cmd/service"
-	"theskyinflames/freeverse-challenge/internal/infra/persistence"
-	"theskyinflames/freeverse-challenge/internal/infra/persistence/postgresql"
+	"theskyinflames/graphql-challenge/cmd/service"
+	"theskyinflames/graphql-challenge/internal/infra/persistence"
+	"theskyinflames/graphql-challenge/internal/infra/persistence/postgresql"
 )
 
 const srvPort = ":80"

@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"theskyinflames/freeverse-challenge/internal/app"
-	"theskyinflames/freeverse-challenge/internal/infra/api"
+	"theskyinflames/graphql-challenge/internal/app"
+	"theskyinflames/graphql-challenge/internal/infra/api"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"

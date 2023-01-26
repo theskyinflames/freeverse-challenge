@@ -3,7 +3,7 @@ package app
 import (
 	"context"
 
-	"theskyinflames/freeverse-challenge/internal/domain"
+	"theskyinflames/graphql-challenge/internal/domain"
 
 	"github.com/google/uuid"
 )

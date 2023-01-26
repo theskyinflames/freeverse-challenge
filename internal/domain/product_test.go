@@ -3,9 +3,9 @@ package domain_test
 import (
 	"testing"
 
-	"theskyinflames/freeverse-challenge/internal/domain"
-	"theskyinflames/freeverse-challenge/internal/fixtures"
-	"theskyinflames/freeverse-challenge/internal/helpers"
+	"theskyinflames/graphql-challenge/internal/domain"
+	"theskyinflames/graphql-challenge/internal/fixtures"
+	"theskyinflames/graphql-challenge/internal/helpers"
 
 	"github.com/stretchr/testify/require"
 )

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"theskyinflames/freeverse-challenge/internal/domain"
+	"theskyinflames/graphql-challenge/internal/domain"
 
 	"github.com/theskyinflames/cqrs-eda/pkg/bus"
 	"github.com/theskyinflames/cqrs-eda/pkg/events"

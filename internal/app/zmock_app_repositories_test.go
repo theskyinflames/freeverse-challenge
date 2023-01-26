@@ -7,8 +7,8 @@ import (
 	"context"
 	"github.com/google/uuid"
 	"sync"
-	"theskyinflames/freeverse-challenge/internal/app"
-	"theskyinflames/freeverse-challenge/internal/domain"
+	"theskyinflames/graphql-challenge/internal/app"
+	"theskyinflames/graphql-challenge/internal/domain"
 )
 
 // Ensure, that ProductsRepositoryMock does implement app.ProductsRepository.

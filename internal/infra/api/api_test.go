@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 
-	"theskyinflames/freeverse-challenge/internal/app"
-	"theskyinflames/freeverse-challenge/internal/domain"
-	"theskyinflames/freeverse-challenge/internal/infra/api"
+	"theskyinflames/graphql-challenge/internal/app"
+	"theskyinflames/graphql-challenge/internal/domain"
+	"theskyinflames/graphql-challenge/internal/infra/api"
 
 	"github.com/google/uuid"
 	"github.com/graphql-go/graphql"

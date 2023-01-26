@@ -5,10 +5,10 @@ import (
 	"errors"
 	"testing"
 
-	"theskyinflames/freeverse-challenge/internal/app"
-	"theskyinflames/freeverse-challenge/internal/domain"
-	"theskyinflames/freeverse-challenge/internal/fixtures"
-	"theskyinflames/freeverse-challenge/internal/helpers"
+	"theskyinflames/graphql-challenge/internal/app"
+	"theskyinflames/graphql-challenge/internal/domain"
+	"theskyinflames/graphql-challenge/internal/fixtures"
+	"theskyinflames/graphql-challenge/internal/helpers"
 
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"

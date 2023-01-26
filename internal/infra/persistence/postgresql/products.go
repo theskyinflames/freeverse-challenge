@@ -6,8 +6,8 @@ import (
 	"errors"
 	"fmt"
 
-	"theskyinflames/freeverse-challenge/internal/app"
-	"theskyinflames/freeverse-challenge/internal/domain"
+	"theskyinflames/graphql-challenge/internal/app"
+	"theskyinflames/graphql-challenge/internal/domain"
 
 	"github.com/google/uuid"
 )

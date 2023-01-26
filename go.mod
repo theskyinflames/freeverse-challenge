@@ -1,4 +1,4 @@
-module theskyinflames/freeverse-challenge
+module theskyinflames/graphql-challenge
 
 go 1.19
 
