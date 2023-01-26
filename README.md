@@ -1,4 +1,4 @@
-# Freeverse.io challenge
+# Code challenge
 
 This a coding challenge to implement the freeverse-challenge service requisites:
 ```
