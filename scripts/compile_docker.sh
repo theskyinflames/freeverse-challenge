@@ -2,4 +2,4 @@
 
 set -e
 
-docker build --no-cache -t coding-challenge .
+docker build --no-cache -t graphql-challenge .
