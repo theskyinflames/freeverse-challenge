@@ -37,7 +37,7 @@ docker-build:
 	scripts/compile_docker.sh
 
 docker-logs:
-	docker logs -f freeverse-challenge-freeverse-challenge-1
+	docker logs -f graphql-challenge-graphql-challenge-1
 
 docker-run: docker-build
 	docker-compose up -d

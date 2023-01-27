@@ -32,7 +32,7 @@ func Run(ctx context.Context, srvPort string, pr app.ProductsRepository) {
 		w.WriteHeader(http.StatusOK)
 	})
 
-	log := log.New(os.Stdout, "freeverse-challenge: ", os.O_APPEND)
+	log := log.New(os.Stdout, "graphql-challenge: ", os.O_APPEND)
 
 	bus := app.BuildCommandQueryBus(log, app.BuildEventsBus(), pr)
 	r.Post("/graphql", api.GraphqlHandler(log, bus))
