@@ -1,6 +1,6 @@
 # Code challenge
 
-This a coding challenge to implement the graphql-challenge service requisites:
+This is a coding challenge to implement these graphql-challenge service requisites:
 ```
   Instructions:
     Write a Go program that exposes an endpoint (using either RPC, REST, or GraphQL) that allows a user to purchase a product. The products are stored in a SQL database and they are unique.
